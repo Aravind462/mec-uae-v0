@@ -16,6 +16,7 @@ const services = [
       "Interior Design",
       "3D Visualization & Rendering",
     ],
+    image: "/architecture.jpg",
   },
   {
     icon: Zap,
@@ -29,6 +30,7 @@ const services = [
       "Fire Fighting Systems",
       "Energy Modeling & Optimization",
     ],
+    image: "/mep-engineering.jpg",
   },
   {
     icon: Flame,
@@ -42,6 +44,7 @@ const services = [
       "Sprinkler System Design",
       "Civil Defence Approvals",
     ],
+    image: "/fire-engineering.jpg",
   },
   {
     icon: ClipboardList,
@@ -55,6 +58,7 @@ const services = [
       "Risk Management",
       "Contract Administration",
     ],
+    image: "/project-management.jpg",
   },
   {
     icon: Map,
@@ -68,6 +72,7 @@ const services = [
       "As-Built Documentation",
       "GIS Mapping Services",
     ],
+    image: "/survey-and-mapping.png",
   },
   {
     icon: Construction,
@@ -81,6 +86,7 @@ const services = [
       "Traffic Engineering",
       "Site Development",
     ],
+    image: "/infrastructure-and-roads.jpg",
   },
 ]
 
@@ -117,7 +123,7 @@ export function ServicesList() {
               <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-muted">
                   <img
-                    src={`/.jpg?height=600&width=800&query=${encodeURIComponent(service.title + " engineering professional construction project")}`}
+                    src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover"
                   />

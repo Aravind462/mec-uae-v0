@@ -25,8 +25,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground">
-                <span className="text-lg font-bold text-primary">M</span>
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground overflow-hidden">
+                <img src="/mec-uae-icon-whitebg.png" alt="icon" />
               </div>
               <span className="text-xl font-bold">MEC</span>
             </div>
